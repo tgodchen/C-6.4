@@ -1,33 +1,12 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int i,k,n;
+    scanf("%d",&n);
+    for (i = 1; i <= n; ++i)
+    {
+        printf("%d^2=%d\t", i,i*i);
+        printf("%d^3=%d\n", i,i*i*i);
+    }
+    return 0;
+}
